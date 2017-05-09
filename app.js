@@ -1,5 +1,8 @@
 'use strict';
 
+//Initialize the score variable.
+var varScore = 0;
+
 //Alert user they are about to play a game.
 alert('We are going to play a game!')
 //Ask user first question, check response, and alert correct/incorrect.
@@ -8,6 +11,7 @@ console.log('question1: ' + varQuestion1);
 varQuestion1 = varQuestion1.toUpperCase();
 console.log('question1: ' + varQuestion1);
 if (varQuestion1 === 'YES' || varQuestion1 === 'Y') {
+  varScore = varScore + 1
   alert('Correct!');
 } else if (varQuestion1 === 'NO' || varQuestion1 === 'N') {
   alert('Incorrect!');
@@ -23,6 +27,7 @@ console.log('question2: ' + varQuestion2);
 if (varQuestion2 === 'YES' || varQuestion2 === 'Y') {
   alert('Inorrect!');
 } else if (varQuestion2 === 'NO' || varQuestion2 === 'N') {
+  varScore = varScore + 1
   alert('Correct!');
 } else {
   alert('Invalid input!');
@@ -36,6 +41,7 @@ console.log('question3: ' + varQuestion3);
 if (varQuestion3 === 'YES' || varQuestion3 === 'Y') {
   alert('Incorrect!');
 } else if (varQuestion3 === 'NO' || varQuestion3 === 'N') {
+  varScore = varScore + 1
   alert('Correct!');
 } else {
   alert('Invalid input!');
@@ -47,6 +53,7 @@ console.log('question4: ' + varQuestion4);
 varQuestion4 = varQuestion4.toUpperCase();
 console.log('question4: ' + varQuestion4);
 if (varQuestion4 === 'YES' || varQuestion4 === 'Y') {
+  varScore = varScore + 1
   alert('Correct!');
 } else if (varQuestion4 === 'NO' || varQuestion4 === 'N') {
   alert('Incorrect!');
@@ -60,6 +67,7 @@ console.log('question5: ' + varQuestion5);
 varQuestion5 = varQuestion5.toUpperCase();
 console.log('question5: ' + varQuestion5);
 if (varQuestion5 === 'YES' || varQuestion5 === 'Y') {
+  varScore = varScore + 1
   alert('Correct!');
 } else if (varQuestion5 === 'NO' || varQuestion5 === 'N') {
   alert('Incorrect!');
@@ -67,5 +75,5 @@ if (varQuestion5 === 'YES' || varQuestion5 === 'Y') {
   alert('Invalid input!');
 }
 
-//Alert user the game is over.
-alert('Thank you for playing this game!')
+//Alert user the game is over and print their score.
+alert('You scored ' + varScore + ' out of 5. Thank you for playing this game!')
