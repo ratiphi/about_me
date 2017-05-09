@@ -4,7 +4,7 @@
 var varScore = 0;
 
 //Alert user they are about to play a game.
-alert('We are going to play a game!')
+alert('We are going to play a game!');
 //Ask user first question, check response, and alert correct/incorrect.
 var varQuestion1 = prompt('Does Tim like to eat pizza? Please enter (Y)es or (N)o');
 console.log('question1: ' + varQuestion1);
@@ -76,4 +76,4 @@ if (varQuestion5 === 'YES' || varQuestion5 === 'Y') {
 }
 
 //Alert user the game is over and print their score.
-alert('You scored ' + varScore + ' out of 5. Thank you for playing this game!')
+alert('You scored ' + varScore + ' out of 5. Thank you for playing this game!');
