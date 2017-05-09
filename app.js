@@ -1,34 +1,71 @@
 'use strict';
 
-var kids = prompt('how many kids does tim have?');
-console.log('number of kids:', kids);
-
-var hats = prompt('how many hats does tim have?');
-console.log('number of hats:', hats);
-
-if (kids === '3' || kids === '4') {
-  //do stuff here
+//Alert user they are about to play a game.
+alert('We are going to play a game!')
+//Ask user first question, check response, and alert correct/incorrect.
+var varQuestion1 = prompt('Does Tim like to eat pizza? Please enter (Y)es or (N)o');
+console.log('question1: ' + varQuestion1);
+varQuestion1 = varQuestion1.toUpperCase();
+console.log('question1: ' + varQuestion1);
+if (varQuestion1 === 'YES' || varQuestion1 === 'Y') {
+  alert('Correct!');
+} else if (varQuestion1 === 'NO' || varQuestion1 === 'N') {
+  alert('Incorrect!');
+} else {
+  alert('Invalid input!');
 }
 
-if (kids === '3' && hats === '2') {
-  //do more stuff here
+//Ask user second question, check response, and alert correct/incorrect.
+var varQuestion2 = prompt('Does Tim like to eat pasta? Please enter (Y)es or (N)o');
+console.log('question2: ' + varQuestion2);
+varQuestion2 = varQuestion2.toUpperCase();
+console.log('question2: ' + varQuestion2);
+if (varQuestion2 === 'YES' || varQuestion2 === 'Y') {
+  alert('Inorrect!');
+} else if (varQuestion2 === 'NO' || varQuestion2 === 'N') {
+  alert('Correct!');
+} else {
+  alert('Invalid input!');
 }
 
-//Alert user they are about to cross the bridge of death.
-alert('Stop! Who would cross the Bridge of Death must answer me these questions three, \'ere the other side he see.')
-//Ask user for their name, log response to console, and then respond to them.
-var varName = prompt('What is your name?');
-console.log('name:' + varName);
-alert('Nice to meet you, ' + varName + '.');
-//Ask user what their quest is, log response to console, and then respond to them.
-var varQuest = prompt('What is your quest?');
-console.log('quest:' + varQuest);
-alert('So, ' + varName + ', you are questing for ' + varQuest + '.');
-//Ask user for their favorite color, log response to console, and then respond to them.
-var varFavoriteColor = prompt('What is your favorite color?');
-console.log('color:' + varFavoriteColor);
-alert(varName + ', don\'t forget your favorite color ' + varFavoriteColor + ' while you quest for ' + varQuest + '!');
-//Ask user the capital of Assyria, log response to console, and then respond to them.
-var varAssyria = prompt('What is the capital of Assyria?');
-console.log('assyria:' + varAssyria);
-alert('Right. Off you go, ' + varName + '.' + ' Have fun in ' + varAssyria + ' while you think of ' + varFavoriteColor + ' objects and quest for ' + varQuest + '!');
+//Ask user third question, check response, and alert correct/incorrect.
+var varQuestion3 = prompt('Does Tim like to fly kites? Please enter (Y)es or (N)o');
+console.log('question3: ' + varQuestion3);
+varQuestion3 = varQuestion3.toUpperCase();
+console.log('question3: ' + varQuestion3);
+if (varQuestion3 === 'YES' || varQuestion3 === 'Y') {
+  alert('Incorrect!');
+} else if (varQuestion3 === 'NO' || varQuestion3 === 'N') {
+  alert('Correct!');
+} else {
+  alert('Invalid input!');
+}
+
+//Ask user fourth question, check response, and alert correct/incorrect.
+var varQuestion4 = prompt('Did Tim grow up in Georgia? Please enter (Y)es or (N)o');
+console.log('question4: ' + varQuestion4);
+varQuestion4 = varQuestion4.toUpperCase();
+console.log('question4: ' + varQuestion4);
+if (varQuestion4 === 'YES' || varQuestion4 === 'Y') {
+  alert('Correct!');
+} else if (varQuestion4 === 'NO' || varQuestion4 === 'N') {
+  alert('Incorrect!');
+} else {
+  alert('Invalid input!');
+}
+
+//Ask user fifth question, check response, and alert correct/incorrect.
+var varQuestion5 = prompt('Did Tim go to University in Texas? Please enter (Y)es or (N)o');
+console.log('question5: ' + varQuestion5);
+varQuestion5 = varQuestion5.toUpperCase();
+console.log('question5: ' + varQuestion5);
+if (varQuestion5 === 'YES' || varQuestion5 === 'Y') {
+  alert('Correct!');
+} else if (varQuestion5 === 'NO' || varQuestion5 === 'N') {
+  alert('Incorrect!');
+} else {
+  alert('Invalid input!');
+}
+
+//Alert user the game is over.
+alert('Thank you for playing this game!')
