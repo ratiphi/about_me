@@ -1,0 +1,37 @@
+header {
+  background: #444;
+  color: #fff;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+#turtle {
+  color: red;
+  background: green;
+}
+
+.rabbit {
+  color: purple;
+  background: yellow;
+}
+
+.highlight {
+  text-shadow: 1px 1px 1px orange;
+}
+
+section div p {
+  border-style: dashed;
+}
