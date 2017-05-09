@@ -1,19 +1,23 @@
 header {
-  background: #777;
+  background: #999;
   color: #111;
   padding: 20px;
 }
 
 h1 {
-  font-size: 20px;
+  font-family: Arial;
+  font-size: 30px;
   margin-bottom: 20px;
 }
 
 p {
+  font-family: Arial;
+  font-size: 15px;
   margin-bottom: 20px;
 }
 
 h2 {
+  font-family: Arial;
   font-size: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
