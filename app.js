@@ -8,6 +8,7 @@ var varUserName = prompt('Hello! What is your name?')
 alert('Would you like to play a game? It\'s pretty simple. I will ask you a few questions about myself, you just follow along!');
 
 //Ask user first question, check response, and alert correct/incorrect.
+function question1() {
 var varQuestion1 = prompt('Does Tim like to eat pizza? Please enter (Y)es or (N)o');
 console.log('question1: ' + varQuestion1);
 varQuestion1 = varQuestion1.toUpperCase();
@@ -20,8 +21,10 @@ if (varQuestion1 === 'YES' || varQuestion1 === 'Y') {
 } else {
   alert('Invalid input!');
 }
+}
 
 //Ask user second question, check response, and alert correct/incorrect.
+function question2() {
 var varQuestion2 = prompt('Does Tim like to eat pasta? Please enter (Y)es or (N)o');
 console.log('question2: ' + varQuestion2);
 varQuestion2 = varQuestion2.toUpperCase();
@@ -34,8 +37,10 @@ if (varQuestion2 === 'YES' || varQuestion2 === 'Y') {
 } else {
   alert('Invalid input!');
 }
+}
 
 //Ask user third question, check response, and alert correct/incorrect.
+function question3() {
 var varQuestion3 = prompt('Does Tim like to fly kites? Please enter (Y)es or (N)o');
 console.log('question3: ' + varQuestion3);
 varQuestion3 = varQuestion3.toUpperCase();
@@ -48,8 +53,10 @@ if (varQuestion3 === 'YES' || varQuestion3 === 'Y') {
 } else {
   alert('Invalid input!');
 }
+}
 
 //Ask user fourth question, check response, and alert correct/incorrect.
+function question4() {
 var varQuestion4 = prompt('Did Tim grow up in Georgia? Please enter (Y)es or (N)o');
 console.log('question4: ' + varQuestion4);
 varQuestion4 = varQuestion4.toUpperCase();
@@ -62,8 +69,10 @@ if (varQuestion4 === 'YES' || varQuestion4 === 'Y') {
 } else {
   alert('Invalid input!');
 }
+}
 
 //Ask user fifth question, check response, and alert correct/incorrect.
+function question5() {
 var varQuestion5 = prompt('Did Tim go to University in Texas? Please enter (Y)es or (N)o');
 console.log('question5: ' + varQuestion5);
 varQuestion5 = varQuestion5.toUpperCase();
@@ -76,10 +85,12 @@ if (varQuestion5 === 'YES' || varQuestion5 === 'Y') {
 } else {
   alert('Invalid input!');
 }
+}
 
 //******************************************************************************
 
 //Generate a random number between 1 and 10.  Set counter variable to 1.
+function question6() {
 var varNumber = Math.floor((Math.random() * 10)+1);
 console.log(varNumber);
 var varCounter = 0;
@@ -105,11 +116,12 @@ while (varCounter < 4) {
     break;
   }
 }
-
+}
 
 //******************************************************************************
 
 //Declare required variables
+function question7() {
 var varStates = ['Georgia', 'North Carolina', 'Florida', 'Mississippi', 'New Mexico', 'Texas', 'Colorado', 'South Carolina'];
 var varPrintStates = varStates.toString();
 var varFlag = false;
@@ -144,6 +156,14 @@ if (varFlag === true) {
 } else {
   alert('Sorry, you didn\'t guess a State I have lived in! The correct answers were ' + varPrintStates);
 }
+}
+question1();
+question2();
+question3();
+question4();
+question5();
+question6();
+question7();
 
 //Alert user the game is over and print their score.
 alert('Good job ' + varUserName + '! You scored ' + varScore + ' out of 7. Thank you for playing this game!');
