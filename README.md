@@ -1,2 +1,2 @@
 Driver: Shaun Wahle
-Nav: Tim Turner
+Navigator: Tim Turner
